@@ -19,15 +19,15 @@
             <ul>
                 <li>
                     <label for="name">Name: <span aria-label="required">*</span></label>
-                    <input type="text"  id="name" name="user_name" />
+                    <input type="text"  id="name" name="user_name" required />
                 </li>
                 <li>
                     <label for="email">Email: <span aria-label="required">*</span></label>
-                    <input type="email"  id="mail" name="user_email" />
+                    <input type="email"  id="mail" name="user_email" required />
                 </li>
                 <li>
                     <label for="msg">Message: <span aria-label="required">*</span></label>
-                    <textarea  id="msg" name="user_msg"></textarea>
+                    <textarea  id="msg" name="user_msg" required ></textarea>
                 </li>
                 <li>
                     <!-- Hidden input type that adds a timestamp to the submitted message. Timestamp value will be set via JS -->
