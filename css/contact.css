@@ -18,9 +18,9 @@ h1 {
 }
 
 form {
-    width: 400px;
+    max-width: 400px;
     padding: 1em;
-    border: 1px solid #EA9AB2;
+    border: 2px solid #EA9AB2;
     border-radius: 1em;
 }
 
@@ -69,14 +69,33 @@ button {
     margin-left: 0.5em;
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
-    color: #FAFAFA;
-    background-color: #1F1F1F;
     border-radius: 5em;
     border: none;
     padding: 1em 2em;
+    border: 2px solid #1F1F1F;
+    transition: all linear 5ms;
 }
 
 button:hover {
-    background-color: #EA9AB2;
     cursor: pointer;
+}
+
+.primary-btn {
+    color: #FAFAFA;
+    background-color: #1F1F1F;
+}
+
+.primary-btn:hover {
+    border-color: #EA9AB2;
+    background-color: #EA9AB2;
+}
+
+.secondary-btn {
+    color: #1F1F1F;
+    background-color: transparent;
+}
+
+.secondary-btn:hover {
+    color: #EA9AB2;
+    border-color: #EA9AB2;
 }
