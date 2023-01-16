@@ -7,6 +7,27 @@
     <!-- Link for external CSS stylesheet -->
     <link rel="stylesheet" href="../css/contact.css">
     <title>Spellbinding - Contact Page</title>
+    <!-- <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous">
+    </script>
+    <script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/akGwZxGm5HWNAHNK/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted")
+				},
+				error: function(){
+					alert("There was an error")
+				}
+			});
+		}
+	</script>
+     -->
 </head>
 <body>
 
@@ -15,29 +36,42 @@
         <h1>Contact Us</h1>
         <p>Got some burning questions for us? Please use the contact form below to get in touch.</p>
         <strong><p>Required fields are followed by <span aria-label="required">*</span>.</p></strong>
-        <form method="" action="">
+        <form action="contact.html" method="post" id="contactForm">
             <ul>
                 <li>
-                    <!-- Hidden input type that adds a timestamp to the submitted message. Timestamp value will be set via JS -->
-                    <input type="hidden" id="timestamp" name="timestamp" value="1234567890">
-                </li>
-                <li>
                     <label for="name">Name: <span aria-label="required">*</span></label>
-                    <input required type="text"  id="name" name="user_name" pattern="[a-zA-Z]+" title="Alphabet characters only" />
+                    <input 
+                    required 
+                    type="text"  
+                    id="name" 
+                    name="user_name"  
+                    pattern="^[a-zA-Z]+[\s]*[a-zA-Z]+$"
+                    title="letters A-Z or a-z and only single space between words" 
+                    />
                 </li>
                 <li>
                     <label for="email">Email: <span aria-label="required">*</span></label>
-                    <input required type="email"  id="mail" name="user_email" />
+                    <input 
+                    required 
+                    type="email"  
+                    id="mail" 
+                    name="user_email" 
+                    />
                 </li>
                 <li>
                     <label for="msg">Message: <span aria-label="required">*</span></label>
-                    <textarea  required id="msg" name="user_msg"></textarea>
+                    <textarea 
+                    required
+                    id="msg" 
+                    name="user_msg">
+                    </textarea>
                 </li>
                 <li class="button">
                     <button type="submit" class="primary-btn">Submit</button>
                     <button type="reset" class="secondary-btn">Reset</button>
                 </li>
             </ul>
+            <p id="submitResult"><em>By submitting this form, you consent to us storing and using the entered information to contact you in relation to your query.</em></p>
         </form>
     </div>
     <!-- Link for external JavaScript -->
