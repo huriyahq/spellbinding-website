@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Marcellus&display=swap');
+
+
+* {
+    background-color: #FAFAFA;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    width: 100vw;
+}
+
+#topImage {
+        object-fit: cover;
+        height: 60vh;
+        width: 100%;
+        background-position: center;
+    }
+
+h1 {
+    margin: 60px 0 50px;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+h1, h2, p {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    line-height: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h1, h2 {
+    font-family: 'Marcellus', serif;
+}
+
+p, .notActive {
+    display: none;
+}
+.active {
+    display: block;
+}
+
+#MLogo {
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-10px);
+}
+
+#MLogo:active {
+    transform: scale(1.50);
+}
+
+
+
+/*mobiles,iPads,tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #topImage {
+        object-fit: cover;
+        height: 70vh;
+        width: 100%;
+}
+}
+
+/*laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #topImage {
+        background-size: contain;
+        height: 70vh;
+        width: 100%;
+        background-position: center;
+}
+}
+
+
+/*Desktops*/
+@media (min-width: 1025px) and (max-width: 1280px){
+    #topImage {
+        object-fit: cover;
+        height: 70vh;
+}
+}
+          
