@@ -56,10 +56,9 @@ textarea {
 }
 
 .button {
-    padding-left: 90px;
+    text-align: center;
 }
 
 button {
-    margin-left: 0.5em;
     margin-top: 0.5em;
 }
