@@ -53,7 +53,7 @@ body {
   /* Secondary */
 .secondary-btn {
   color: var(--dark);
-  background-color: var(--light);
+  background-color: transparent;
 }
 
 .secondary-btn:hover {
