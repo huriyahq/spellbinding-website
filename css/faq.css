@@ -2,7 +2,7 @@
 
 
 * {
-    background-color: #EAF2D7;
+    background-color: #FAFAFA;
     margin: 0;
     box-sizing: border-box;
 }
@@ -13,7 +13,7 @@ body {
 }
 
 #topImage {
-        background-size: cover;
+        object-fit: cover;
         height: 60vh;
         width: 100%;
         background-position: center;
@@ -63,8 +63,8 @@ p, .notActive {
 /*mobiles,iPads,tablets*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     #topImage {
-        background-size: cover;
-        height: 60vh;
+        object-fit: cover;
+        height: 70vh;
         width: 100%;
 }
 }
@@ -82,6 +82,9 @@ p, .notActive {
 
 /*Desktops*/
 @media (min-width: 1025px) and (max-width: 1280px){
-            
+    #topImage {
+        object-fit: cover;
+        height: 70vh;
+}
 }
           
