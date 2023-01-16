@@ -29,21 +29,23 @@ form.addEventListener("submit", (event) => {
         console.log("All form inputs are valid");
         submitData(username, email, cleanedMsg);
         result.innerText = "Message submitted successfully.";
-        form.reset();
+        username = "";
     }  else {
         console.log("Some form inputs are invalid");
         result.innerText = "Please ensure the entered name and email address are valid and all required fields are filled out.";
     }
+
+    // Reset result text when reset button is clicked
+    form.addEventListener("reset", () => {
+        result.innerHTML = `<em>By submitting this form, you consent to us storing and using the entered information to contact you in relation to your query.</em>`;
+    });
+
 });
 
-// Reset result text when reset button is clicked
-form.addEventListener("reset", () => {
-    result.innerHTML = `<em>${submitResult.innerText}</em>`;
-});
 
 // Function to submit form values to API spreadsheet
 function submitData (username, email, message) {
-        fetch("https://api.apispreadsheets.com/data/iGlGqutHvBdoG7ap/", {
+        fetch("https://api.apispreadsheets.com/data/HgAQeAjN7BHiBML6/", {
             method: "POST",
             body: JSON.stringify({"data": {"user_name":username,"user_email":email,"user_msg":message}}),
         }).then(res =>{
