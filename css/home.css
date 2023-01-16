@@ -1,5 +1,5 @@
 /* GLOBALS */
-
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Marcellus&display=swap');
 
 *, *::before, *::after {
@@ -12,11 +12,11 @@ body {
   height: 100vh;
   font-family: 'Inter', sans-serif;
   background-color: #FAFAFA;
-}
+} */
 
 /* NAVIGATION */
 
-.navbar {
+/* .navbar {
   display: flex;
   flex-direction: row;
   background-color: #EAF2D7;
@@ -144,7 +144,7 @@ body {
   height: auto;
   width: auto;
   max-width: 100px;
-  }
+  } */
 
 
 /* MAIN PAGE */
@@ -156,8 +156,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #E27396;
-  color: #FAFAFA;
+  background: var(--dark-pink);
+  color: var(--light);
   padding: 2rem;
 }
 
@@ -170,9 +170,9 @@ body {
   margin-top: 2rem;
 }
 
-.highlight-item > h2 {
+/* .highlight-item > h2 {
   font-family: 'Marcellus', serif;
-}
+} */
 
 .highlight-item > img {
   width: 60px;
@@ -180,7 +180,7 @@ body {
 
 /* FOOTER */
 
-footer {
+/* footer {
   background-color: #EAF2D7;
   padding: .5rem 2rem 4rem;
 }
@@ -192,14 +192,14 @@ footer > div > h3 {
 
 footer > div > p {
   margin: 0;
-}
+} */
 
 
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
 
-  .navbar {
+  /* .navbar {
     padding: .3rem 2rem;
   }
 
@@ -211,7 +211,7 @@ footer > div > p {
     padding: .5rem 3rem 7.5rem;
     display: flex;
     justify-content: space-between;
-  }
+  } */
 
   .product-highlights {
     display: flex;
@@ -226,7 +226,7 @@ footer > div > p {
 
 @media screen and (min-width: 1280px) {
    
-  .nav-menu {
+  /* .nav-menu {
     display: flex;
     flex-direction: row;
     order: 2;
@@ -263,7 +263,7 @@ footer > div > p {
 
   .nav-basket {
     order: 3;
-  } 
+  }  */
   
   .highlight-item img {
     width: 100px;
