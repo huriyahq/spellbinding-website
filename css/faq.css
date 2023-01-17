@@ -42,7 +42,7 @@ h1, h2, .faqtext {
 @media screen and (min-width: 320px) {
     #topImage {
         background-image: url("../images/maracons-s.jpg");
-        height: 30%;
+        height: 35%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -54,7 +54,7 @@ h1, h2, .faqtext {
 @media screen and (min-width: 768px) {
     #topImage {
         background-image: url("../images/maracons-s.jpg");
-        height: 60%;
+        height: 55%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -63,7 +63,7 @@ h1, h2, .faqtext {
 }
 }
 
-@media screen and (min-width: 1270px) {
+@media screen and (min-width: 1280px) {
     #topImage {
         background-image: url("../images/maracons-s.jpg");
         background-size: cover;
