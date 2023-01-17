@@ -1,8 +1,5 @@
-#topImage {
-        object-fit: cover;
-        height: 60vh;
-        width: 100%;
-        background-position: center;
+#topImage {    
+    display: none;
     }
 
 h1 {
@@ -15,7 +12,7 @@ h1 {
     margin: 0 auto;
 }
 
-h1, h2, p {
+h1, h2, .faqtext {
     margin-left: 4rem;
     margin-right: 4rem;
     line-height: 1.4rem;
@@ -23,7 +20,7 @@ h1, h2, p {
     margin-bottom: 1rem;
 }
 
-p, .notActive {
+.faqtext, .notActive {
     display: none;
 }
 
@@ -41,33 +38,40 @@ p, .notActive {
     transform: scale(1.50);
 }
 
-
-
-/*mobiles,iPads,tablets*/
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+/*Media queries*/
+@media screen and (min-width: 320px) {
     #topImage {
-        object-fit: cover;
-        height: 70vh;
-        width: 100%;
-}
-}
-
-/*laptops*/
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    #topImage {
-        background-size: contain;
-        height: 70vh;
-        width: 100%;
+        background-image: url("../images/maracons-s.jpg");
+        height: 35%;
+        background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        display: block;
 }
 }
 
-
-/*Desktops*/
-@media (min-width: 1025px) and (max-width: 1280px){
+@media screen and (min-width: 768px) {
     #topImage {
-        object-fit: cover;
-        height: 70vh;
+        background-image: url("../images/maracons-s.jpg");
+        height: 55%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        display: block;
+}
+}
+
+@media screen and (min-width: 1280px) {
+    #topImage {
+        background-image: url("../images/maracons-s.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 75%;
+        display: block;
 }
 }
           
