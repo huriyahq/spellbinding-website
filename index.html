@@ -6,12 +6,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link for external CSS stylesheet -->
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/home.css">
     <title>Spellbinding</title>
 </head>
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="pages/faq.html">FAQ</a></li>
+        </ul>
+        <div>
+            <img class="nav-logo" src="images/Spellbinding-logo.png" alt="Spellbinding logo">
+        </div>
+        <div class="nav-basket">
+            <a href="#">
+                <img class="basket-icon" src="images/basket-01.svg" alt="Basket">
+            </a>
+        </div>
+    </nav>
 
+    <!-- PAGE CONTENT -->
 
-    <!-- Link for external JavaScript stylesheet -->
+    <!-- hero section -->
+    <section class="hero-section">
+        <img src="images/6.png" alt="A stack of three macarons in different colours">
+        <div class="hero-text">
+            <h1>Spellbinding Macarons</h1>
+            <p>We use our vast knowledge of colour therapy and spells to bake their custom combinations into a range of expertly-made macarons. Treat yourself to unusual, fresh flavours with a sprinkling of enchantment for a postive change in your life. Or share a delicious box with someone you wish well! </p>
+            <button type="button" class="btn primary-btn"><a href="#">Explore</a></button>
+        </div>
+    </section>
+
+    <!-- marquee with moving banner -->
+    <div class="marquee">
+        <p>COMING SOON: dark macarons = more advanced use of magic. Use responsibly!</p>
+    </div>
+
+    <!-- product highlights -->
+    <section class="product-highlights">
+        <div class="highlight-item">
+            <img src="images/Magic-white.png" alt="">
+            <h2>A touch of magic</h2>
+            <p>Try our winning combination of organic ingredients and magic spells</p>
+        </div>
+        <div class="highlight-item">
+            <img src="images/Freshly-made-white.png" alt="">
+            <h2>Freshly made</h2>
+            <p>Enjoy hand-made products to your order</p>
+        </div>
+        <div class="highlight-item">
+            <img src="images/Fast-delivery-white.png" alt="">
+            <h2>Fast delivery</h2>
+            <p>Receive your delivery within 48hrs of ordering</p>
+        </div>
+    </section>
+
+    <!-- reviews carousel -->
+    <section class="carousel">
+        <h2 class="reviews-header">Our customers are saying...</h2>
+        <div class="slides">
+          <div class="slides-item" id="slide-1">
+            <h3>Arrived on time and very effective!</h3>
+            <p class="text-width">"I purchased a box of Spellbinding macarons and not only were they delicious but also I swear the spells worked... I don't know how, but I'll certainly be buying another box before my exams next semester."</p>
+          </div>
+          <div class="slides-item" id="slide-2">
+            <h3>Excellent service and fast delivery</h3>
+            <p class="text-width">"I'm really impressed with the level of service. I had many questions (let's face it, the products are quite unusal!), but all were answered promptly and at length. The delivery was fast and the box well packaged and beautifully presented. A very friendly, positive place."</p>
+          </div>
+          <div class="slides-item" id="slide-3">
+            <h3>Enjoyed my macarons</h3>
+            <p class="text-width">"I bought a box of these macarons as a fun present for my best friend's birthday. We spent the whole evening binging on classic, magic-themed movies (<i>I Married a Witch</i>, <i>Practical Magic</i>, <i>The Witches of Eastwick</i>) and, obviously, the macarons. We had an amazing time! The instructions were clear and we're looking forward to seeing if any of our wishes will come true :)"</p>
+          </div>
+          <div class="slides-item" id="slide-4">
+            <h3>Delicious and fun</h3>
+            <p class="text-width">"I received my box in perfect condition. Me and my family shared it for Christmas. Doing the spells was a fun way of spending time with everyone, and it created a lot of excitement among the younger members of the family. Even if the spells end up not working, the whole experience certainly make you think in more positive terms about the future, which in itself is great. I'll be buying more as treats for myself and as presents."</p>
+          </div>
+          <div class="slides-item" id="slide-5">
+            <h3>Amazing flavours!</h3>
+            <p class="text-width">"I received a lovely box of Spellbinding macarons for my last birthday. They are absolutely delicious and the flavours are so original. The colors are cheerful and their significance is explained, which I thought was very nice touch. I had interviewed for a job I really wanted and, naturally, my wish was to get it. And I did! So I can say with confidence they work ;)"</p>
+          </div>       
+        </div>
+        <div class="carousel-nav">
+          <a class="slider-nav primary-btn" href="#slide-1">1</a>
+          <a class="slider-nav primary-btn" href="#slide-2">2</a>
+          <a class="slider-nav primary-btn" href="#slide-3">3</a>
+          <a class="slider-nav primary-btn" href="#slide-4">4</a>
+          <a class="slider-nav primary-btn" href="#slide-5">5</a>
+        </div>
+      </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <h3><b>Contact Details</b></h3>
+            <p><b>Email</b>: hi@spellbinding.co</p>
+            <p><b>Phone</b>: 0123 456 789</p>
+            <p><b>Address</b>: 12 Charm's Way <br/> London EC15 8TS</p>
+        </div>
+        <div>
+            <h3><b>Opening Hours</b></h3>
+            <p><b>Monday-Friday</b>: 10am - 5.30pm</p>
+            <p><b>Saturday</b>: 10am - 2pm</p>
+            <p><b>Sunday</b>: Closed</p>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
+            <div class="socials-icons">
+                <img class="social-icon" src="images/facebook-01.svg" alt="Facebook">
+                <img class="social-icon" src="images/instagram-01.svg" alt="Instagram">
+                <img class="social-icon" src="images/twitter-01.svg" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link for external JavaScript -->
     <script src="./js/script.js"></script>
 </body>
 </html>

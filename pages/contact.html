@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link for external CSS stylesheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Spellbinding - Contact Page</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+        </ul>
+        <div>
+            <img class="nav-logo" src="../images/Spellbinding-logo.png" alt="Spellbinding logo">
+        </div>
+        <div class="nav-basket">
+            <a href="#">
+                <img class="basket-icon" src="../images/basket-01.svg" alt="Basket">
+            </a>
+        </div>
+    </nav>
+    <!-- TALIHA IS WORKING ON THIS PAGE -->
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Got some burning questions for us? Please use the contact form below to get in touch.</p>
+        <strong><p>Required fields are followed by <span aria-label="required">*</span>.</p></strong>
+        <form action="contact.html" method="post" id="contactForm">
+            <ul>
+                <li>
+                    <label for="name">Name: <span aria-label="required">*</span></label>
+                    <input 
+                    required 
+                    type="text"  
+                    id="name" 
+                    name="user_name"  
+                    pattern="^[a-zA-Z]+[\s]*[a-zA-Z]+$"
+                    title="letters A-Z or a-z and only single space between words" 
+                    />
+                </li>
+                <li>
+                    <label for="email">Email: <span aria-label="required">*</span></label>
+                    <input 
+                    required 
+                    type="email"  
+                    id="mail" 
+                    name="user_email" 
+                    />
+                </li>
+                <li>
+                    <label for="msg">Message: <span aria-label="required">*</span></label>
+                    <textarea 
+                    required
+                    id="msg" 
+                    name="user_msg"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit" class="btn primary-btn">Submit</button>
+                    <button type="reset" class="btn secondary-btn">Reset</button>
+                </li>
+            </ul>
+            <p id="submitResult"><em>By submitting this form, you consent to us storing and using the entered information to contact you in relation to your query.</em></p>
+        </form>
+    </div>
+
+     <!-- FOOTER -->
+     <footer>
+        <div>
+            <h3><b>Contact Details</b></h3>
+            <p><b>Email</b>: hi@spellbinding.co</p>
+            <p><b>Phone</b>: 0123 456 789</p>
+            <p><b>Address</b>: 12 Charm's Way <br/> London EC15 8TS</p>
+        </div>
+        <div>
+            <h3><b>Opening Hours</b></h3>
+            <p><b>Monday-Friday</b>: 10am - 5.30pm</p>
+            <p><b>Saturday</b>: 10am - 2pm</p>
+            <p><b>Sunday</b>: Closed</p>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
+            <div class="socials-icons">
+                <img class="social-icon" src="../images/facebook-01.svg" alt="Facebook">
+                <img class="social-icon" src="../images/instagram-01.svg" alt="Instagram">
+                <img class="social-icon" src="../images/twitter-01.svg" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+    <!-- Link for external JavaScript -->
+    <script src="../js/contact.js"></script>
+</body>
+</html>
