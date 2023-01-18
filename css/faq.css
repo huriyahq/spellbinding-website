@@ -41,11 +41,13 @@ h1, h2, .faqtext {
 /*Media queries*/
 @media screen and (min-width: 320px) {
     #topImage {
-        background-image: url("../images/maracons-s.jpg");
-        height: 35%;
+        /*background-image: url("../images/maracons-s.jpg");
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;*/
+        background: url("../images/maracons-s.jpg") no-repeat center;
+        background-size: cover;
+        height: 35%;
         width: 100%;
         display: block;
 }
@@ -53,11 +55,13 @@ h1, h2, .faqtext {
 
 @media screen and (min-width: 768px) {
     #topImage {
-        background-image: url("../images/maracons-s.jpg");
-        height: 55%;
+        /*background-image: url("../images/maracons-s.jpg");
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;*/
+        background: url("../images/maracons-s.jpg") no-repeat center;
+        background-size: cover;
+        height: 55%;
         width: 100%;
         display: block;
 }
@@ -65,10 +69,12 @@ h1, h2, .faqtext {
 
 @media screen and (min-width: 1280px) {
     #topImage {
-        background-image: url("../images/maracons-s.jpg");
+       /*background-image: url("../images/maracons-s.jpg");
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;*/
+        background: url("../images/maracons-s.jpg") no-repeat center;
+        background-size: cover;
         width: 100%;
         height: 75%;
         display: block;
